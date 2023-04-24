@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Digital Form</title>
+</head>
+
+  <body>
+  <div class="container">
+    <h1 class="main-header">Account Application Form.</h1>
+    <hr>
+    <form id="app-form" action="">
+    <fieldset class="sub-container" id="basic-details">
+      <h2 class="sub-heading">Basic Details</h2>
+      <hr>
+        <label for="dropdown" class="standard-label">
+          Title<span class="required">*</span>
+          <br>
+          <select  id="dropdown" class="standard-select" required>
+            <option value="select" disabled selected>Select Title</option>
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Miss">Miss</option>
+            <option value="Ms">Ms</option>
+            <option value="Dr">Dr</option>
+            <option value="Prof">Prof</option>
+          </select>
+        </label>
+        <label for="firstname" class="standard-label">
+          First Name<span class="required">*</span>
+          <input class="standard-input" name="firstname" id="firstname" type="text" placeholder="First name..." required>
+        </label><br>
+        <label for="middlenames" class="standard-label">
+          Middle Names (If Applicable)
+          <input class="standard-input" name="middlename" id="middlename" type="text" placeholder="Middle names...">
+        </label>
+        <label for="lastname" class="standard-label">
+          Last Name<span class="required">*</span>
+          <input class="standard-input" name="lastname" id="lastname" type="text" placeholder="Last name..." required>
+        </label><br>
+        <label for="phone-number" class="standard-label">
+          Phone Number<span class="required">*</span>
+          <input class="standard-input" type="tel" id="phone" name="phone" pattern='^\+?\d{10,12}' placeholder="Example: 01925999111" required>
+        </label>
+        <label for="email-address" class="standard-label">
+          Email<span class="required">*</span>
+          <input class="standard-input" id="email-address" type="email" placeholder="Your email address..." required>
+        </label>
+        <label for="DOB" class="standard-label">
+          Date of Birth<span class="required">*</span>
+          <input class="standard-input" type="date" name="DOB" id="DOB" required>
+        </label><br>
+        <label for="accounttype" class="standard-label">
+          What type of account are you applying for?<span class="required">*</span>
+          <br>
+          <select  id="account-select" class="standard-select" required>
+            <option value="select" disabled selected>Choose Account</option>
+            <option value="basic-current">Basic Current Account</option>
+            <option value="premium-current">Premium Current Account</option>
+            <option value="instant-saver">Instant Access Savings Account</option>
+            <option value="lifetime-isa">Lifetime ISA</option>
+            <option value="help-to-buy">Help to Buy ISA</option>
+          </select>
+        </label><br>
+      <label for="Gendertype" class="standard-label">
+           Gender<span class="required">*</span>
+          <br>
+          <select  id="Gender-select" class="standard-select" required>
+            <option value="select" disabled selected>select gender</option>
+            <option value="basic-current">Male</option>
+             <option value="basic-current">Female</option>
+             <option value="basic-current">Others</option>
+             </select>
+        </label><br>
+      <label for="Districtype" class="standard-label">
+          Your Distric<span class="required">*</span>
+          <br>
+          <select  id="Distric-select" class="standard-select" required>
+            <option value="select" disabled selected>Choose Distric</option>
+            <option value="basic-current">Thiruvananthapuram</option>
+             <option value="basic-current"> Kollam</option>
+             <option value="basic-current">Kottayam</option>
+            <option value="basic-current">Thrissur</option>
+            <option value="basic-current">Eranakulam</option>
+
+             </select>
+        </label><br>
+         <label for="branchestype" class="standard-label">
+          Select Branch<span class="required">*</span>
+          <br>
+          <select  id="branches-select" class="standard-select" required>
+            <option value="select" disabled selected>Choose branch</option>
+            <option value="basic-current">Panoor</option>
+             <option value="basic-current">Neyyattinkara</option>
+             <option value="basic-current">Tirur</option>
+            <option value="basic-current">Ottappalam</option>
+            <option value="basic-current">Changanassery</option>
+
+             </select>
+        </label><br>
+      <fieldset>
+  <legend>Material provides</legend>
+  <div>
+    <input type="checkbox" id="coding" name="interest" value="credit card" />
+    <label for="coding">credit card</label>
+  </div>
+  <div>
+    <input type="checkbox" id="music" name="interest" value="Debit card" />
+    <label for="music">Debit card</label>
+  </div>
+        <div>
+          <input type="checkbox" id="Cheque book" name="interest" value="Cheque book" />
+          <label for="music">Cheque book</label>
+
+        </div>
+
+</fieldset>
+
+
+
+
+
+    </fieldset>
+    </form>
+  </div>
+</body>
+</html>
+<div>
+ <div><a href="acp"><input type="submit"></div>
+<br>
+<div><a href="logout"><input type="submit" value="Logout" />
+</div>
+
